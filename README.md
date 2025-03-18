@@ -1,12 +1,12 @@
-# Accessible Popups
+# Redesigned Oly Website
 
-A case study examining the accessibility of cookie consent popups and implementing improved designs for inclusive user interaction.
+TODO
 
 ## Project Overview
 
-This project analyzes cookie consent popups from three major websites (Filmin, FIFA, and H&M) through the lens of accessibility. It examines how these components handle different input methods, present information to users, and support assistive technologies like screen readers.
+TODO
 
-The project is built with HTML and CSS for styling and responsive design.
+The project is built with HTML and CSS for styling, as well as JavaScript for a responsive design.
 
 ## Collaboration:
 

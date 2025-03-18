@@ -1,17 +1,16 @@
 /* Root variables for easy color customization */
 :root {
-  --primary-color: #071E22;      /* Navbar color */
-  --secondary-color: #FFE527;    /* Button color */
-  --text-light: #ffffff;         /* Light text color */
-  --text-dark: #333333;          /* Dark text color */
-  --text-muted: #666666;         /* Muted text color */
-  --bg-light: #f5f5f5;           /* Light background */
-  --bg-white: #ffffff;           /* White background */
-  --border-light: #eeeeee;       /* Light border color */
-  --shadow: rgba(0, 0, 0, 0.1);  /* Shadow color */
+  --primary-color: #071E22;
+  --secondary-color: #FFE527;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --text-muted: #666666;
+  --bg-light: #f5f5f5;
+  --bg-white: #ffffff;
+  --border-light: #eeeeee;
+  --shadow: rgba(0, 0, 0, 0.1);  
 }
 
-/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -56,7 +55,7 @@ a {
   border-radius: 5px;
   text-align: center;
   transition: all 0.3s ease;
-  border: 2px solid #071E22; /* Added black border */
+  border: 2px solid #071E22;
 }
 
 .yellow-btn {
@@ -68,7 +67,7 @@ a {
 
 .yellow-btn:hover {
   background-color: #FDFC64;
-  transform: translateY(-2px);  /* Subtle hover effect */
+  transform: translateY(-2px); 
 }
 
 .small-yellow-btn {
@@ -77,12 +76,12 @@ a {
   padding: 2px 8px;
   background-color: var(--secondary-color);
   color: var(--text-dark);
-  border: 2px solid #071E22; /* Added black border */
+  border: 2px solid #071E22; 
 }
 
 .small-yellow-btn:hover {
   background-color: #FDFC64;
-  transform: translateY(-2px);  /* Subtle hover effect */
+  transform: translateY(-2px);  
 
 }
 
@@ -111,15 +110,15 @@ header .container {
   border: none;
   cursor: pointer;
   padding: 5px;
-  -webkit-appearance: none; /* Remove default styling */
+  -webkit-appearance: none; 
   appearance: none;
 }
 
 .hamburger-menu img {
   width: 24px;
   height: 24px;
-  display: block; /* Ensure proper image rendering */
-  filter: brightness(0) invert(1); /* Make sure image is white */
+  display: block; 
+  filter: brightness(0) invert(1);
 }
 
 nav ul {
@@ -173,9 +172,9 @@ nav ul li a:hover {
   order: 2;
   border: 3px solid #071E22;
   position: relative;
-  height: 30vh; /* 30% of viewport height */
-  min-height: 200px; /* Minimum height */
-  max-height: 250px; /* Maximum height */
+  height: 30vh; 
+  min-height: 200px;
+  max-height: 250px; 
   overflow: hidden;
   margin-bottom: 30px;
 }
@@ -228,13 +227,13 @@ nav ul li a:hover {
   display: flex;
   height: 100%;
   position: absolute;
-  width: max-content; /* Allow the track to be as wide as needed */
+  width: max-content;
   animation: bannermove 30s linear infinite;
 }
 
 .carousel-slide {
   width: 300px;
-  height: 100%; /* Match parent height */
+  height: 100%; 
   flex-shrink: 0;
 }
 
@@ -249,15 +248,14 @@ nav ul li a:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-300px * 8)); /* Move exactly by width of first set of images */
+    transform: translateX(calc(-300px * 8)); 
   }
 }
 
-/* For smoother animations */
 .carousel-track {
   will-change: transform;
   backface-visibility: hidden;
-}/* Button styles with black border */
+}
 
 
 /* Content Sections */
@@ -270,7 +268,7 @@ nav ul li a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin: 0 auto; /* Center the grid */
+  margin: 0 auto;
 }
 
 .content-box {
@@ -278,7 +276,7 @@ nav ul li a:hover {
   border-radius: 8px;
   padding: 25px;
   box-shadow: 0 2px 8px var(--shadow);
-  width: 100%; /* Ensure full width */
+  width: auto; 
 }
 
 /* Post image sizing */
@@ -351,8 +349,8 @@ nav ul li a:hover {
 }
 
 .event-details {
-  flex: 1; /* Takes up remaining space */
-  min-width: 0; /* Prevents flex item from overflowing */
+  flex: 1; 
+  min-width: 0;
 }
 
 .event-details p {
@@ -380,7 +378,6 @@ nav ul li a:hover {
   height: 20px;
 }
 
-/* Post Section */
 .post-header {
   display: flex;
   align-items: center;
@@ -444,10 +441,9 @@ nav ul li a:hover {
 }
 
 .see-more-link:hover {
-  background-color: #0a2c32; /* Slightly lighter primary color */
+  background-color: #0a2c32;
   color: var(--text-light);
-  transform: translateY(-2px);  /* Subtle hover effect */
-
+  transform: translateY(-2px); 
 }
 
 /* Sponsors Section */
@@ -467,7 +463,7 @@ nav ul li a:hover {
 
 .sponsor-logo {
   max-width: 200px;
-  width: 30%; /* Makes logos take up relative width */
+  width: 30%;
 }
 
 .sponsor-logo img {
@@ -500,13 +496,13 @@ footer .container {
 }
 
 .social-link img {
-  width: 40px; /* Full size icons */
+  width: 40px;
   height: 40px;
   transition: all 0.3s ease;
 }
 
 .social-link:hover img {
-  opacity: 0.8; /* Simple hover effect */
+  opacity: 0.8;
 }
 
 /* Responsive Styles */
@@ -528,7 +524,7 @@ footer .container {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    color: white; /* Ensure any text is white */
+    color: white;
   }
 
   .logo {
@@ -572,23 +568,31 @@ footer .container {
     width: 100%;
   }
 
+  .content-box {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
   .post img {
     width: 60vw;
   }
 
-  .content-box {
-    width: 95vw;
-  }
-  
   footer .container {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .image-carousel {
     order: 1;
     margin-bottom: 0;
-    height: 25vh; /* Slightly smaller on tablets */
+    height: 25vh;
     min-height: 180px;
   }
   
@@ -678,7 +682,7 @@ footer .container {
   }
 
   .content-box {
-    width: calc(100% - 20px); /* Account for padding */
+    width: calc(100% - 20px);
     margin: 0 auto;
     padding: 12px;
   }
